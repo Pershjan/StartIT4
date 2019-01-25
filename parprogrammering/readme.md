@@ -1,0 +1,1 @@
+Lag en egen mappe for dere selv, kall den for eksempel "PerOgLise"
