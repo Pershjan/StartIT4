@@ -1,10 +1,57 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<meta name="viewport"   content="width=device-width, initial-scale=3">
 <head>
 <h1 style="text-align:center";>Ibrahim Bademci</h1>
-<style>
 
+<style>
+.container{
+    position: relative;
+    width: 50%;
+}
+.image{
+    opacity: 1;
+    display: block;
+    widows: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50, -50%);
+    text-align: center;
+}
+.container:hover .image{
+    opacity: 0.3;
+}
+.container:hover .middle{
+    opacity: 1;
+}
+.text{
+    background-color:crimson;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    cursor: pointer;
+    outline: none;
+    border:none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+.text:hover {background-color:rgb(88, 2, 2)}
+
+.text:active {
+    background-color: rgb(88, 2, 2);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
 body{
     background-color:#282525;
     font-family: 'Courier New', Courier, monospace;
@@ -38,11 +85,6 @@ li a:hover{
 .active{
     background-color: grey;
 }
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 </style>
 </head>
 <body>
@@ -52,9 +94,11 @@ img{
         <li><a href="site3.html">veit ikke</a></li>
         <li><a href="/StartIT4/main/index.html">Tilbake til StartIT4</a></li>
     </ul>
-    
-    <img src="bildeavmeg.jpg" alt= "bilde" width="1000" height="800">
-
+<div class="container">
+    <img src="bildeavmeg.jpg"   alt="prøve"    class="image"    style="width:100%">
+    <div class="middle">
+        <div class="text">Ibrahim Bademci</div>
+</div>
 </body>
 
 </html>
