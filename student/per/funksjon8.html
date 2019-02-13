@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Funksjon8</title>
+    <style>
+        .stilig {
+            background-color: blueviolet;
+        }
+
+        .style1 {
+            background-color: cornflowerblue;
+        }
+
+        .style2 {
+            background-color: greenyellow;
+        }
+
+        .style3 {
+            background-color: crimson;
+        }
+
+        .style4 {
+            background-color: fuchsia;
+        }
+    </style>
+</head>
+<body>
+    <div id="bla">BlueViolet</div>
+    <input id="chk" type="checkbox" onchange="toggleStyle()" />
+    <br />
+    <div id="boo">CornFlowerBlue</div>
+    <input id="chk2" type="checkbox" onchange="toggleStyle2()" />
+    <br />
+    <div id="boo1">GreenYellow</div>
+    <input id="chk3" type="checkbox" onchange="toggleStyle3()" />
+    <br />
+    <div id="boo2">Crimson</div>
+    <input id="chk4" type="checkbox" onchange="toggleStyle4()" />
+    <br />
+    <div id="boo3">Fuchsia</div>
+    <input id="chk5" type="checkbox" onchange="toggleStyle5()" />
+
+    <script>
+        function toggleStyle() {
+            var isChecked = document.getElementById('chk').checked;
+            document.getElementById('bla').classList.toggle('stilig', isChecked);
+        }
+        function toggleStyle2() {
+            var isChecked = document.getElementById('chk2').checked;
+            document.getElementById('boo').classList.toggle('style1', isChecked);
+        }
+        function toggleStyle3() {
+            var isChecked = document.getElementById('chk3').checked;
+            document.getElementById('boo1').classList.toggle('style2', isChecked);
+        }
+        function toggleStyle4() {
+            var isChecked = document.getElementById('chk4').checked;
+            document.getElementById('boo2').classList.toggle('style3', isChecked);
+        }
+        function toggleStyle5() {
+            var isChecked = document.getElementById('chk5').checked;
+            document.getElementById('boo3').classList.toggle('style4', isChecked);
+        }
+    </script>
+</body>
+</html>

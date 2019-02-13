@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        button {
+            float: left;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="Change(this)">1</button>
+    <button onclick="Change(this)">2</button>
+    <button onclick="Change(this)">3</button><br />
+    <br />
+    <button onclick="Change(this)">4</button>
+    <button onclick="Change(this)">5</button>
+    <button onclick="Change(this)">6</button><br />
+    <br />
+    <button onclick="Change(this)">7</button>
+    <button onclick="Change(this)">8</button>
+    <button onclick="Change(this)">9</button>
+    <p id="Number"> </p>
+    <script>
+        var Number = document.getElementById('Number');
+        function Change(NumberBtn) {
+            Number.innerHTML += NumberBtn.innerHTML + "-";
+
+        }
+    </script>
+</body>
+</html>
